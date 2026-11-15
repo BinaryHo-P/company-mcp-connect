@@ -1,0 +1,22 @@
+{
+  "name": "company-mcp-server",
+  "version": "0.1.0",
+  "private": true,
+  "description": "회사 DB·파일 저장소를 Claude 에 연결하는 MCP 서버 골격 (가상 회사 '새봄인테리어' 예시)",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "smoke": "node scripts/smoke-test.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "pg": "^8.23.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/pg": "^8.11.10",
+    "typescript": "^5.9.3"
+  }
+}
